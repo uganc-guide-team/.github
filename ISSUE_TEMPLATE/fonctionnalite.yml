@@ -1,0 +1,39 @@
+name: Fonctionnalité
+description: Proposer ou décrire une fonctionnalité à développer
+title: "[Fonctionnalité] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: exigence
+    attributes:
+      label: Exigence du cahier des charges
+      description: Identifiant de l'exigence concernée, s'il existe.
+      placeholder: "Ex. : EF-11"
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Le besoin
+      description: Qui en a besoin, et pourquoi ?
+      placeholder: "En tant que visiteur, je veux… afin de…"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Ce qu'il faut faire
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères de fin
+      description: Comment saura-t-on que c'est terminé ?
+      placeholder: |
+        - [ ] …
+        - [ ] …
+    validations:
+      required: true
+  - type: textarea
+    id: maquette
+    attributes:
+      label: Maquette ou référence visuelle

@@ -1,0 +1,23 @@
+name: Tâche
+description: Une tâche de configuration, de documentation, de données ou d'organisation
+title: "[Tâche] "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Ce qu'il faut faire
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères de fin
+      placeholder: |
+        - [ ] …
+    validations:
+      required: true
+  - type: textarea
+    id: ressources
+    attributes:
+      label: Ressources utiles
+      description: Liens, documents, sections du guide.
